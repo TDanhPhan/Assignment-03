@@ -1,0 +1,621 @@
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 47, 3);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: rgb(3, 47, 3);
+  font-size: 13px;
+}
+
+section > .about-container {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+i {
+  color: rgb(3, 153, 217);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* CSS cho chữ "time"*/
+.time {
+  display: inline;
+  background-color: #0a48a5;
+  color: white;
+  border-radius: 25%;
+  padding: 2px 3px;
+  align-content: start;
+  margin-bottom: 5px;
+}
+
+/* CSS Background */
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* CSS phần Banner */
+.img-banner {
+  position: relative;
+  background-image: url(../images/banner.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+}
+
+.text-banner {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  top: 15%;
+  left: 35%;
+  text-align: center;
+  line-height: 35px;
+}
+
+.text-banner span {
+  font-size: 10px;
+}
+
+/* CSS phần banner có carousel */
+
+#carouselExampleIndicators img {
+  height: 75vh;
+}
+
+.carousel-indicators {
+  top: 10px;
+}
+
+.carousel-item div {
+  top: 30vh;
+}
+/* CSS cho Nav bar */
+#nav-bar {
+  text-align: center;
+  padding-top: 0px;
+  position: relative;
+}
+
+#nav-bar a {
+  color: rgb(3, 47, 3);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-left: rgb(227, 223, 223) 1px solid;
+  border-right: rgb(227, 223, 223) 1px solid;
+  white-space: nowrap;
+}
+
+/* CSS phần avatar không nâng cao */
+/* CSS phần tên avatar */
+/* .avatar{
+    display: inline-block;   
+    line-height: 15px;
+    padding-top: 10px;
+}
+.avatar #role{
+    font-size: 10px;
+    color: rgba(211, 211, 211, 0.902);
+}
+
+.avatar #name{
+    font-size: 25px;
+} */
+
+/* Grid-box cho Nav-bar */
+.nav-bar-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0;
+}
+
+.thong-tin {
+  grid-column: 3 / 4;
+}
+
+.ly-lich {
+  grid-column: 4 / 5;
+}
+
+.avatar {
+  grid-column: 5 / 9;
+}
+
+.chung-chi {
+  grid-column: 9 / 10;
+}
+
+.du-an {
+  grid-column: 10 / 11;
+}
+
+/* CSS phần About */
+#about .about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.section-title {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#target {
+  box-shadow: -10px 10px 20px rgb(99, 92, 92);
+  padding: 10px 50px 10px 50px;
+}
+
+#personal-info {
+  box-shadow: 10px 10px 20px rgb(99, 92, 92);
+  padding: 10px 50px 10px 50px;
+}
+
+.info {
+  padding-left: 0;
+}
+
+/* CSS icon phần About */
+.about-icon {
+  padding: 10px 0;
+}
+
+/* CSS cho phần job-info */
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#job-info {
+  margin: 20px 15%;
+}
+
+/* CSS info-container-item */
+
+.info-container-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1.5px rgb(197, 193, 193) solid;
+  margin: 10px;
+  padding: 20px 20px 30px 30px;
+  line-height: 25px;
+  align-content: start;
+}
+
+.info-container-item h2 {
+  grid-column: 1 / 4;
+  padding: 30px 0;
+  font-size: 23px;
+}
+
+.info-container-item i {
+  grid-column: 4 / span 1;
+  margin-top: 20px;
+}
+
+.info-container-item ul {
+  grid-column: 1 / -1;
+  align-items: top;
+}
+
+/* CSS ul phần experience, education, và activities */
+.list-1 {
+  position: relative;
+  margin-left: 10px;
+}
+
+.list-1 b::before {
+  content: "\2022";
+  font-size: 25px;
+  position: absolute;
+  left: -15px;
+  color: #0a48a5;
+}
+
+/* CSS cho icon section title Job-info */
+#job-info i {
+  font-size: 30px;
+  color: rgb(109, 106, 106);
+  float: right;
+  margin-right: 20px;
+}
+
+/* CSS cho phần Hobbies */
+.hobbies-text {
+  font-size: 8px;
+}
+
+#hobbies li {
+  float: left;
+}
+
+#hobbies i {
+  font-size: 100%;
+  float: left;
+  margin-right: 10px;
+  color: #0a48a5;
+  padding: 14px;
+  border: 1px #0a48a5 solid;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+
+.ht-1 {
+  padding-left: 5px;
+}
+
+.ht-3 {
+  padding-left: 7px;
+}
+
+.ht-4 {
+  padding-left: 10px;
+}
+
+/* CSS thanh level tiến trình */
+
+.level-1 {
+  width: 45px;
+  height: 2px;
+  background: #199cdb;
+  display: inline-block;
+  margin-right: 10px;
+  align-content: start;
+}
+
+.level-2 {
+  width: 45px;
+  height: 2px;
+  background: #dfd8d8;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skills li {
+  margin-bottom: -5px;
+}
+
+/* CSS phần Certificate */
+#certificate {
+  padding: 20px 15%;
+}
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.certificate-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 20px;
+  border-bottom: 1.5px solid #d6c08d;
+}
+
+.certificate-item img {
+  grid-column: 1 / span 2;
+  width: 200%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.certificate-item p {
+  grid-column: 3 / span 6;
+  margin-left: 20px;
+}
+
+.certificate-item b {
+  text-transform: uppercase;
+}
+
+/* Tạo layout border */
+
+.CC-2 img {
+  border-left: 1.5px solid #d6c08d;
+  padding-left: 10px;
+}
+
+.CC-3 {
+  border-bottom: none;
+}
+
+/* CSS phần #Project */
+#project {
+  padding: 20px 15%;
+}
+
+.project-info div {
+  float: left;
+}
+
+#project-h2 {
+  padding-left: 10px;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-1 {
+  grid-column: 1 / span 1;
+}
+
+.project-2 {
+  grid-column: 2 / span 1;
+}
+
+.project-3 {
+  grid-column: 3 / span 1;
+}
+
+.project-container img {
+  max-width: 100%;
+  margin-bottom: -5px;
+}
+
+.project-title {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+}
+
+.project-info {
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+}
+
+/* CSS icon phần #project */
+#project i {
+  color: rgb(3, 47, 3);
+  padding: 0 5px 0 20px;
+}
+
+/* CSS cho table */
+table {
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  vertical-align: top;
+  padding: 8px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* CSS Footer */
+#footer {
+  padding: 30px;
+  text-align: center;
+}
+
+.footer a {
+  margin-right: 30px;
+  color: rgb(3, 47, 3);
+  font-size: 15px;
+}
+
+.footer i {
+  margin-right: 3px;
+}
+
+.footer p {
+  display: inline-block;
+}
+
+/* CSS avatar nâng cao */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 44%;
+  top: -100%;
+  border: 6px solid rgba(255, 255, 255, 0.895);
+}
+
+/* CSS phần nâng cao */
+
+.info-name {
+  display: block;
+  color: blue;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px grey solid;
+  margin: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.PC-name {
+  padding-bottom: 20px;
+}
+
+.PC-name span {
+  font-weight: bold;
+}
+
+.PC-name b {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.goal-detail {
+  border-bottom: lightgray solid 1px;
+}
+
+/* CSS cho timeline */
+
+.timeline-number {
+  display: inline;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgb(201, 140, 214) !important;
+  border-radius: 50%;
+  border: 1.5px black solid;
+  padding: 10px;
+}
+
+/* Grid box cho Project Charter */
+
+.project-charter-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px;
+  background-color: blue;
+}
+
+.project-charter-container div {
+  background-color: rgb(254, 251, 252);
+}
+
+.Goals {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.Team {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.Timeline {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.Scopes {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.Primary {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+/* CSS phần Goals */
+.goal-detail {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 20px;
+}
+
+.bi-flag {
+  height: 30px;
+  grid-column: 1 / 2;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 20%;
+}
+
+.goal-detail div {
+  grid-column: 2 / 7;
+}
+
+/* CSS phần Scopes  */
+
+.scope-detail {
+  display: flex;
+}
+.scope-detail div {
+  margin-left: 20px;
+}
+
+.scope-detail p {
+  margin-bottom: 0;
+}
+
+/* CSS cho phần Team */
+.team-detail {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.team-detail svg {
+  height: 30px;
+  width: 20%;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.team-detail div {
+  margin: 0 20px;
+  width: 80%;
+}
+
+/* CSS cho phần Primary  */
+
+.primary-detail {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 0;
+}
+
+.primary-detail svg {
+  height: 30px;
+  width: 20%;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.primary-detail p {
+  margin: 0 20px;
+  width: 80%;
+}
+
+/* CSS cho phần timeline */
+.timeline-detail {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-number {
+  grid-column: 1 / span 1;
+  text-align: center;
+  color: white;
+  background-color: rgb(178, 130, 240) !important;
+  border-radius: 50%;
+  border: 1.5px black solid;
+  margin: -10% -20% 10% 20%;
+}
+
+.timeline-content {
+  grid-column: 2 / span 4;
+  margin: 5px 20px;
+  border-bottom: #199cdb dotted 1px;
+}

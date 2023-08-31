@@ -1,0 +1,127 @@
+@media (max-width: 768px) {
+  /* CSS phần banner */
+  .img-banner {
+    height: 50vh;
+    width: auto;
+  }
+
+  /* CSS phần Nav-bar */
+
+  .avatar {
+    display: none;
+  }
+
+  .nav-bar-container {
+    display: inline-block;
+  }
+
+  #nav-bar {
+    text-align: start;
+  }
+
+  #nav-bar a {
+    display: block;
+    width: 50vw;
+    text-align: left;
+    border: none;
+    font-size: 2rem;
+    margin-left: 30%;
+  }
+
+  /* CSS phần #about */
+  .about-container {
+    max-width: 90%;
+  }
+
+  #about .about-container {
+    display: block;
+  }
+
+  #target {
+    box-shadow: 20px 0px 20px rgb(99, 92, 92);
+  }
+
+  #personal-info {
+    box-shadow: -20px 10px 20px rgb(99, 92, 92);
+  }
+
+  /* CSS phần #job-info */
+  .info-container {
+    display: block;
+  }
+
+  #job-info {
+    margin: 20px 10%;
+  }
+
+  /* CSS phần #certificate */
+  #certificate {
+    padding: 20px 10%;
+  }
+
+  .certificate-container {
+    display: block;
+  }
+
+  .CC-2 img {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .certificate-item {
+    display: inline-block;
+    height: 1vh;
+  }
+
+  .certificate-item img {
+    width: 100%;
+    padding: 30px 20px 0px 20px;
+  }
+
+  .CC-1 {
+    border: none;
+  }
+
+  .CC-3 {
+    border-bottom: 1.5px solid #d6c08d;
+  }
+
+  /* CSS phần #Project */
+  #project {
+    padding: 20px 10%;
+  }
+
+  .project-container {
+    display: block;
+  }
+
+  .project-container > div {
+    padding: 15px 0 15px 0;
+  }
+
+  .project-info div {
+    float: none;
+  }
+
+  #project i {
+    padding-left: 0;
+  }
+
+  /* CSS phần footer */
+  .footer p {
+    display: none;
+  }
+
+  .footer i {
+    font-size: 2rem;
+  }
+
+ 
+
+
+
+
+
+}
+
+
